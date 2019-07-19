@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.snc.shiro.mapper.SncPermissionMapper">
+
+    <select id="findPermissionByUser" parameterType="java.lang.Long" resultType="java.lang.String">
+      SELECT permission.PERMISSION_NAME
+        FROM snc_permission permission
+        WHERE exists(
+            SELECT 1
+            FROM snc_role_permission rel
+            WHERE permission.PERMISSION_ID = rel.PERMISSION_ID AND rel.ROLE_ID IN (SELECT ROLE_ID
+                                                                               FROM snc_user_role
+                                                                               WHERE USER_ID = #{_parameters})
+        )
+    </select>
+</mapper>

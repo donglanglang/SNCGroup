@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="shiro-authority" />
+        <module name="snc-common" />
+        <module name="snc-financialmanage" />
+        <module name="snc-main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="shiro-authority" target="1.8" />
+      <module name="snc-common" target="1.8" />
+      <module name="snc-financialmanage" target="1.8" />
+      <module name="snc-main" target="1.8" />
+      <module name="SNCGroup" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.snc.shiro.mapper.SncRoleMapper">
+
+    <select id="findRoleByUser" resultType="java.lang.String" parameterType="java.lang.Long">
+        select role.ROLE_NAME from snc_role role where exists(
+          select 1 from snc_user_role rel where role.ROLE_ID = rel.ROLE_ID and rel.USER_ID = #{_parameters}
+        )
+    </select>
+
+</mapper>
