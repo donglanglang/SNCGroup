@@ -30,6 +30,9 @@
         <fastjson.version>1.2.5</fastjson.version>
         <shiro.version>1.4.0</shiro.version>
         <shiro-redis.version>2.4.2.1-RELEASE</shiro-redis.version>
+        <shiro-redis.version>2.4.2.1-RELEASE</shiro-redis.version>
+        <jackson.datatype.version>2.9.2</jackson.datatype.version>
+        <typehandlers-jsr310.version>1.0.1</typehandlers-jsr310.version>
     </properties>
 
     <parent>
@@ -114,7 +117,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-starter</artifactId>
-            <version>1.1.6</version>
+            <version>1.1.23</version>
         </dependency>
         <dependency>
             <groupId>mysql</groupId>
@@ -153,6 +156,17 @@
             <artifactId>mybatis-plus-boot-starter</artifactId>
             <version>${mybatisplus-boot-starter.version}</version>
         </dependency>
+        <!-- 此处为了转换localdaetime-->
+<!--        <dependency>-->
+<!--            <groupId>org.mybatis</groupId>-->
+<!--            <artifactId>mybatis-typehandlers-jsr310</artifactId>-->
+<!--            <version>${typehandlers-jsr310.version}</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.fasterxml.jackson.datatype</groupId>-->
+<!--            <artifactId>jackson-datatype-jsr310</artifactId>-->
+<!--            <version>${jackson.datatype.version}</version>-->
+<!--        </dependency>-->
     </dependencies>
 
     <build>
