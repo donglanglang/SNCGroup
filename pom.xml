@@ -28,7 +28,7 @@
         <mybatisplus.version>3.1.2</mybatisplus.version>
         <mybatisplus.generator.version>3.1.2</mybatisplus.generator.version>
         <fastjson.version>1.2.5</fastjson.version>
-        <shiro.version>1.4.0</shiro.version>
+        <shiro.version>1.7.0</shiro.version>
         <shiro-redis.version>2.4.2.1-RELEASE</shiro-redis.version>
         <shiro-redis.version>2.4.2.1-RELEASE</shiro-redis.version>
         <jackson.datatype.version>2.9.2</jackson.datatype.version>
